@@ -1,0 +1,21 @@
+<div>
+    <h2>{{product.name}}</h2>
+    <p><span>Precio:</span>${{product.price}}</p>
+    
+    <p *ngIf="product.inStock;else elseBlock">
+        <span>Disponibilidad:</span>
+        En stock
+    </p>
+    <ng-template #elseBlock>
+        <p><span>Disponibilidad:</span>Agotado</p>
+    </ng-template>
+
+    <p *ngIf="product.onSale;else elseBlock2">
+        <span>En oferta:</span> Si
+    </p>
+    <ng-template #elseBlock2>
+        <p><span>En oferta:</span> No</p>
+    </ng-template>
+
+    <img [src]="product.image" alt="Imagen del producto">
+</div>

@@ -1,0 +1,15 @@
+.sale{
+    color: green;
+}
+ul{
+    list-style-type:none;
+    cursor: pointer;
+    padding: 8px; 
+}
+li:hover{
+    background-color: #c6b9b9;
+} 
+
+ul li.sale {
+    font-weight: bold;
+  }

@@ -1,0 +1,7 @@
+<h1>Lista de productos</h1>
+
+<ul>
+    <li *ngFor="let product of products" [ngClass]="{'sale':product.onSale}" (click)="selectProduct(product)">{{product.name}}-${{product.price}}<span *ngIf="!product.inStock" style="color: red;">(Agotado)</span></li>
+</ul>
+<h2>Detalles de los productos</h2>
+<app-product-detail *ngIf="selectedProduct" [product]="selectedProduct"></app-product-detail>
