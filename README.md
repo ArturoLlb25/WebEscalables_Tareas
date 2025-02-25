@@ -1,2 +1,2 @@
-# WebEscalables_Tareas
-Tareas de la materia de desarrollo web en frameworks
+# Ejercicios de Aplicaciones Web Escalables
+**Nombre**: Arturo Llanas Banda
